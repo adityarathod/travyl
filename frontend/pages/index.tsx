@@ -3,7 +3,7 @@ export default function Home() {
     <div>
       {/* <div className="video-wrapper"> */}
       <video autoPlay loop className="background-video">
-        <source src="/splash.mp4" type="video/mp4" />
+        <source src="/travyl.mp4" type="video/mp4" />
       </video>
       {/* </div> */}
       {/* <img
