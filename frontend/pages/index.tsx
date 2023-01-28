@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 import Link from "next/link";
 
 export default function Home() {
@@ -25,11 +27,9 @@ export default function Home() {
         </div>
       </div>
       <div className="absolute bottom-9 w-full flex items-center justify-center">
-        <Link href="/step_2">
-          <button className="py-3 w-3/4 font-medium text-xl bg-white rounded-full">
-            let's get started &rarr;
-          </button>
-        </Link>
+        <button className="py-3 w-3/4 font-medium text-xl bg-white rounded-full">
+          let's get started &rarr;
+        </button>
       </div>
     </div>
   );
