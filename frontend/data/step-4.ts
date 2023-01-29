@@ -2,27 +2,27 @@ import { CarouselItem } from "@/components/carousel";
 
 export const carouselData: CarouselItem[] = [
   {
-    img: "/food/thai.jpg",
+    img: "/activities/hiking.jpg",
     description: "hiking",
   },
   {
-    img: "/sample.jpg",
+    img: "/activities/skiing.jpg",
     description: "skiing",
   },
   {
-    img: "/food/thai.jpg",
-    description: "night life",
-  },
-  {
-    img: "/food/thai.jpg",
+    img: "/activities/surfing.jpg",
     description: "surfing",
   },
   {
-    img: "/food/thai.jpg",
+    img: "/activities/nightlife.jpg",
+    description: "night life",
+  },
+  {
+    img: "/activities/museum.jpg",
     description: "museums",
   },
   {
-    img: "/food/thai.jpg",
+    img: "/activities/shopping.jpg",
     description: "shopping",
   },
 ];
