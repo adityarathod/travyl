@@ -1,5 +1,7 @@
 import Link from "next/link"
 
+import Link from "next/link";
+
 export default function Home() {
   return (
     <div>
@@ -25,9 +27,9 @@ export default function Home() {
         </div>
       </div>
       <div className="absolute bottom-9 w-full flex items-center justify-center">
-        <Link href="/food" className="py-3 block w-3/4 text-center font-medium text-xl bg-white rounded-full">
+        <button className="py-3 w-3/4 font-medium text-xl bg-white rounded-full">
           let's get started &rarr;
-        </Link>
+        </button>
       </div>
     </div>
   );
