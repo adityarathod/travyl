@@ -1,38 +1,26 @@
 import Carousel, { CarouselItem } from "@/components/carousel";
+import { carouselData } from "@/data/step-2";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Step2Onboarding() {
-  const carouselData: CarouselItem[] = [
-    {
-      img: "/food/thai.jpg",
-      description: "thai",
-    },
-    {
-      img: "/food/classic.jpg",
-      description: "classic american",
-    },
-    {
-      img: "/food/chinese.jpg",
-      description: "chinese",
-    },
-    {
-      img: "/food/mexican.jpg",
-      description: "mexican",
-    },
-    {
-      img: "/food/italian.jpg",
-      description: "italian",
-    },
-    {
-      img: "/food/indian.jpg",
-      description: "indian",    
-    }
-  ];
-
   const [selectedItem, setSelectedItem] = useState<CarouselItem>(
     carouselData[0]
   );
+
+  useEffect(() => {
+    if (typeof localStorage !== "undefined") {
+      const persistedItm = localStorage.getItem("food");
+      if (persistedItm) {
+        const foundItem = carouselData.find(
+          (itm) => itm.description === persistedItm
+        );
+        if (foundItem) {
+          setSelectedItem(foundItem);
+        }
+      }
+    }
+  }, []);
 
   return (
     <div>
@@ -47,7 +35,10 @@ export default function Step2Onboarding() {
         <div className="mt-20">
           <Carousel
             items={carouselData}
-            onChange={(itm) => setSelectedItem(itm)}
+            onChange={(itm) => {
+              setSelectedItem(itm);
+              localStorage.setItem("food", itm.description);
+            }}
           />
         </div>
       </main>
@@ -61,7 +52,7 @@ export default function Step2Onboarding() {
             &nbsp;&larr;&nbsp;
           </Link>
           <Link
-            href="/food"
+            href="/onboarding/step-3"
             className="py-3 block flex-1 text-center font-medium text-xl bg-sky text-white rounded-full"
           >
             next &rarr;

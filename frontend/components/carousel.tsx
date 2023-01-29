@@ -1,4 +1,5 @@
-import { useState } from "react";
+/* eslint-disable @next/next/no-img-element */
+import { useEffect, useState } from "react";
 
 export interface CarouselItem {
   img: string;
@@ -29,7 +30,10 @@ export default function Carousel({ items, onChange }: CarouselProps) {
     setCurItem(curItem - 1);
   };
 
-  console.log(curItem);
+  useEffect(() => {
+    onChange(items[curItem]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [curItem]);
 
   return (
     <>
@@ -40,6 +44,7 @@ export default function Carousel({ items, onChange }: CarouselProps) {
         <img
           src={items[curItem].img}
           className="rounded-full aspect-square w-5/6 mx-2"
+          alt={items[curItem].description}
         />
         <button className="text-3xl font-bold" onClick={incrementItem}>
           &rarr;

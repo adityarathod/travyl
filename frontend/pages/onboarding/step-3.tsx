@@ -1,6 +1,8 @@
 import Carousel, { CarouselItem } from "@/components/carousel";
 import Link from "next/link";
 import { useState } from "react";
+import {useRouter} from 'next/router'
+
 
 export default function Step3Onboarding() {
   const carouselData: CarouselItem[] = [
@@ -30,7 +32,12 @@ export default function Step3Onboarding() {
     carouselData[0]
   );
 
+  const router = useRouter(); 
+  const data = router.query
+  console.log(data)
+
   return (
+    
     <div>
       <div className="absolute -z-10 top-0 left-0 w-full h-full bg-neutral"></div>
       <div className="absolute w-full text-center top-6 text-sky font-bold text-3xl">
@@ -51,7 +58,7 @@ export default function Step3Onboarding() {
       <div className="absolute bottom-9 w-full flex items-center justify-center">
         <div className="w-3/4 flex items-center justify-center">
           <Link
-            href="/"
+            href="step-2"
             className="py-3 px-3 mr-2 aspect-square block text-center font-medium text-xl bg-gray-200 text-black rounded-full"
           >
             &nbsp;&larr;&nbsp;
