@@ -7,18 +7,18 @@ export const carouselData: CarouselItem[] = [
   },
   {
     img: "/locations/city.jpg",
-    description: "Big City",
+    description: "big city",
   },
   {
     img: "/locations/beach.jpg",
-    description: "Beach",
+    description: "beach",
   },
   {
     img: "/locations/canyon.jpg",
-    description: "Canyons",
+    description: "canyons",
   },
   {
     img: "/locations/snow.jpg",
-    description: "Snowy",
+    description: "snowy",
   },
 ];
