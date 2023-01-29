@@ -28,17 +28,17 @@ export default async function handler(
     const interests = rawInterests.split(",");
 
     if (typeof rawLocation !== "string") {
-      throw Error("Num days is not string: " + rawGroupSize);
+      throw Error("Location is not string: " + rawGroupSize);
     }
     const location = rawLocation;
 
     if (typeof rawOriginAirport !== "string") {
-      throw Error("Num days is not string: " + rawGroupSize);
+      throw Error("Origin airport is not string: " + rawGroupSize);
     }
     const originAirport = rawOriginAirport;
 
     if (typeof rawDestinationAirport !== "string") {
-      throw Error("Num days is not string: " + rawGroupSize);
+      throw Error("Destination airport is not string: " + rawGroupSize);
     }
     const destinationAirport = rawDestinationAirport;
 

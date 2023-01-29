@@ -19,3 +19,7 @@
 pre {
   white-space: pre-wrap;
 }
+
+body {
+  @apply bg-neutral;
+}

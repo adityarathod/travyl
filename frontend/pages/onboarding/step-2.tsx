@@ -46,7 +46,7 @@ export default function Step2Onboarding() {
       <div className="absolute bottom-9 w-full flex items-center justify-center">
         <div className="w-3/4 flex items-center justify-center">
           <Link
-            href="/"
+            href="/onboarding/landing"
             className="py-3 px-3 mr-2 aspect-square block text-center font-medium text-xl bg-gray-200 text-black rounded-full"
           >
             &nbsp;&larr;&nbsp;

@@ -27,7 +27,7 @@ export default function Home() {
       </div>
       <div className="absolute bottom-9 w-full flex items-center justify-center">
         <Link
-          href="/onboarding/step-2"
+          href="/onboarding/landing"
           className="py-3 block w-3/4 text-center font-medium text-xl bg-white rounded-full"
         >
           let's get started &rarr;
