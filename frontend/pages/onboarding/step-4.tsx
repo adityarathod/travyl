@@ -37,13 +37,13 @@ export default function Step3Onboarding() {
       <div className="absolute bottom-9 w-full flex items-center justify-center">
         <div className="w-3/4 flex items-center justify-center">
           <Link
-            href="step-2"
+            href="/onboarding/step-3"
             className="py-3 px-3 mr-2 aspect-square block text-center font-medium text-xl bg-gray-200 text-black rounded-full"
           >
             &nbsp;&larr;&nbsp;
           </Link>
           <Link
-            href=""
+            href="/onboarding/step-5"
             className="py-3 block flex-1 text-center font-medium text-xl bg-sky text-white rounded-full"
           >
             next &rarr;
