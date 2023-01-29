@@ -9,13 +9,25 @@ export default function Step2Onboarding() {
       description: "thai",
     },
     {
-      img: "/sample.jpg",
-      description: "hehe",
+      img: "/food/classic.jpg",
+      description: "classic american",
     },
     {
-      img: "/food/thai.jpg",
-      description: "hoho",
+      img: "/food/chinese.jpg",
+      description: "chinese",
     },
+    {
+      img: "/food/mexican.jpg",
+      description: "mexican",
+    },
+    {
+      img: "/food/italian.jpg",
+      description: "italian",
+    },
+    {
+      img: "/food/indian.jpg",
+      description: "indian",    
+    }
   ];
 
   const [selectedItem, setSelectedItem] = useState<CarouselItem>(
