@@ -3,7 +3,7 @@ import { CarouselItem } from "@/components/carousel";
 export const carouselData: CarouselItem[] = [
   {
     img: "/locations/mountainside.jpg",
-    description: "Mountain Side",
+    description: "mountain side",
   },
   {
     img: "/locations/city.jpg",
