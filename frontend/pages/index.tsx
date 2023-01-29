@@ -1,10 +1,12 @@
 /* eslint-disable react/no-unescaped-entities */
+import Link from "next/link"
+
 export default function Home() {
   return (
     <div>
       {/* <div className="video-wrapper"> */}
       <video autoPlay loop className="background-video">
-        <source src="/splash.mp4" type="video/mp4" />
+        <source src="/travyl.mp4" type="video/mp4" />
       </video>
       {/* </div> */}
       {/* <img
@@ -24,9 +26,9 @@ export default function Home() {
         </div>
       </div>
       <div className="absolute bottom-9 w-full flex items-center justify-center">
-        <button className="py-3 w-3/4 font-medium text-xl bg-white rounded-full">
+        <Link href="/food" className="py-3 block w-3/4 text-center font-medium text-xl bg-white rounded-full">
           let's get started &rarr;
-        </button>
+        </Link>
       </div>
     </div>
   );
