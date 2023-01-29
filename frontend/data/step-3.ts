@@ -3,22 +3,22 @@ import { CarouselItem } from "@/components/carousel";
 export const carouselData: CarouselItem[] = [
   {
     img: "/food/thai.jpg",
-    description: "Mountain Side",
+    description: "mountain side",
   },
   {
     img: "/sample.jpg",
-    description: "Big City",
+    description: "big city",
   },
   {
     img: "/food/thai.jpg",
-    description: "Beach",
+    description: "beach",
   },
   {
     img: "/food/thai.jpg",
-    description: "Canyons",
+    description: "canyons",
   },
   {
     img: "/food/thai.jpg",
-    description: "Snowy",
+    description: "snowy",
   },
 ];
