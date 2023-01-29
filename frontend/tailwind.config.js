@@ -14,6 +14,10 @@ module.exports = {
     extend: {
       fontFamily: {
         'sans': ['DM Sans', ...defaultTheme.fontFamily.sans],
+      },
+      colors: {
+        sky: '#0078D2',
+        neutral: '#FAF9F9'
       }
     },
   },
