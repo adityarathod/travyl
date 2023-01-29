@@ -2,7 +2,7 @@ import Carousel, { CarouselItem } from "@/components/carousel";
 import Link from "next/link";
 import { useState } from "react";
 import { useRouter } from "next/router";
-import { carouselData } from "@/data/step-3";
+import { carouselData } from "@/data/step-4";
 
 export default function Step3Onboarding() {
   const [selectedItem, setSelectedItem] = useState<CarouselItem>(
@@ -21,14 +21,14 @@ export default function Step3Onboarding() {
       </div>
 
       <main className="w-full text-center mt-36">
-        <h1 className="font-bold text-5xl">pick a location</h1>
+        <h1 className="font-bold text-5xl">pick an activity</h1>
 
         <div className="mt-20">
           <Carousel
             items={carouselData}
             onChange={(itm) => {
               setSelectedItem(itm);
-              localStorage.setItem("location", itm.description);
+              localStorage.setItem("activity", itm.description);
             }}
           />
         </div>
@@ -43,7 +43,7 @@ export default function Step3Onboarding() {
             &nbsp;&larr;&nbsp;
           </Link>
           <Link
-            href="/onboarding/step-4"
+            href=""
             className="py-3 block flex-1 text-center font-medium text-xl bg-sky text-white rounded-full"
           >
             next &rarr;
