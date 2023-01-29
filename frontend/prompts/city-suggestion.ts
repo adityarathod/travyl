@@ -1,9 +1,10 @@
 import generateCompletion from "@/openai/completion";
 
 const PROMPT_TEMPLATE = `
-Give me a list of $NUM_RESULTS cities with airports in America with a description for each.
+Give me a list of $NUM_RESULTS cities with airports in America with a personalized description for each.
 This is for a group of $GROUP_SIZE that requires a spot that contains all the following interests: $INTERESTS.
 Use a valid JSON formatted list of objects with the keys "city", "airport", "airportCode", and "description".
+Make sure the list is ranked in order of best to worst for this group.
 `;
 
 export interface CitySuggestionPromptData {
